@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &155454
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 483640}
+  - 114: {fileID: 11436830}
+  - 114: {fileID: 11465026}
+  - 114: {fileID: 11458554}
+  m_Layer: 0
+  m_Name: backWorld
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &483640
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155454}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11436830
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b410586538da5e4aa63477f4cf67fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 112720, guid: 8cbb3e87116f39e40a21fd5551ed3b75, type: 2}
+  - {fileID: 178276, guid: 728ec2b7bb14d644e82ee99e0bac9f9b, type: 2}
+  - {fileID: 128628, guid: 76b7c2ed5e4dd664c8d7ddf8f7b4654e, type: 2}
+  speedRanges:
+  - 4
+  - 5
+  - 5
+  - 6
+  - 3
+  - 4
+  frecuency:
+  - 3
+  - 3
+  - 15
+  startWait: 1
+--- !u!114 &11458554
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd96164c414017489a1b3449f5fe11d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myFont: {fileID: 12800000, guid: 61eb74e5ede71e243891d7b0291edd07, type: 3}
+--- !u!114 &11465026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b8ad2d54ef8bd64988cb33babb32c53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energyBar: {fileID: 127804, guid: 9f9b3577d21ee5449aa363e9c791aa77, type: 2}
+  maxEnergy: 1000
+  startEnergy: 1000
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: material
+      value: 
+      objectReference: {fileID: 2100000, guid: 06ece6e0b70abcf47982d44b84bf95d5, type: 2}
+    - target: {fileID: 0}
+      propertyPath: energyBar
+      value: 
+      objectReference: {fileID: 127804, guid: 9f9b3577d21ee5449aa363e9c791aa77, type: 2}
+    - target: {fileID: 0}
+      propertyPath: maxEnergy
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startEnergy
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: frecuency
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 155454}
+  m_IsPrefabParent: 1
