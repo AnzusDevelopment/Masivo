@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class scoreController : MonoBehaviour {
+public class ScoreController : MonoBehaviour {
 
     private int score = 0;
-    private static scoreController instance;
+    private static ScoreController instance;
 
     static public bool isActive
     {
@@ -14,18 +14,18 @@ public class scoreController : MonoBehaviour {
         }
     }
 
-    public static scoreController Instance
+    public static ScoreController Instance
     {
         get
         {
             if (instance == null)
             {
-                instance = Object.FindObjectOfType<scoreController>();
+                instance = Object.FindObjectOfType<ScoreController>();
                 if (instance == null)
                 {
                     GameObject container = new GameObject("_scorecontroller");
                     DontDestroyOnLoad(container);
-                    instance = container.AddComponent<scoreController>();
+                    instance = container.AddComponent<ScoreController>();
                 }
             }
             return instance;

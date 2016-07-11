@@ -11,13 +11,12 @@ GameObject:
   - 212: {fileID: 21227518}
   - 50: {fileID: 5095820}
   - 114: {fileID: 11494886}
-  - 114: {fileID: 11456310}
-  - 58: {fileID: 5892458}
   - 114: {fileID: 11403956}
   - 114: {fileID: 11479436}
+  - 60: {fileID: 6034050}
   m_Layer: 8
   m_Name: asteroid_5
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,8 +28,9 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178276}
   m_LocalRotation: {x: 0, y: 0, z: -0.38268346, w: 0.9238795}
-  m_LocalPosition: {x: 25.05, y: 1.74, z: -2}
-  m_LocalScale: {x: 0.6255406, y: 0.6255407, z: 0.6255407}
+  m_LocalPosition: {x: 1.11, y: 2.35, z: -2}
+  m_LocalScale: {x: 0.5694432, y: 0.5694431, z: 0.5694431}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -51,8 +51,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &5892458
-CircleCollider2D:
+--- !u!60 &6034050
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -63,8 +63,29 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.6
+  m_Points:
+    m_Paths:
+    - - {x: 0.55, y: -0.13}
+      - {x: 0.55, y: 0.28}
+      - {x: 0.59, y: 0.31}
+      - {x: 0.63, y: 0.39999998}
+      - {x: 0.63, y: 0.45}
+      - {x: 0.42, y: 0.63}
+      - {x: 0.35999998, y: 0.63}
+      - {x: 0.08, y: 0.61}
+      - {x: -0.25, y: 0.42}
+      - {x: -0.32, y: 0.35}
+      - {x: -0.35, y: 0.22999999}
+      - {x: -0.53, y: 0.089999996}
+      - {x: -0.63, y: -0.01}
+      - {x: -0.63, y: -0.39}
+      - {x: -0.59999996, y: -0.44}
+      - {x: -0.31, y: -0.63}
+      - {x: -0.19999999, y: -0.63}
+      - {x: -0.099999994, y: -0.59999996}
+      - {x: -0.03, y: -0.58}
+      - {x: 0.31, y: -0.44}
+      - {x: 0.47, y: -0.29}
 --- !u!114 &11403956
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -79,21 +100,7 @@ MonoBehaviour:
   fieldBlast: {fileID: 154624, guid: a0d5fffe993a8bb4eaad7c7789a78900, type: 2}
   cityBlast: {fileID: 164830, guid: 12b0660052a93a44da47560b90b83bdc, type: 2}
   damage: 50
-  dificulty: 1
---- !u!114 &11456310
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 178276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30d435ced29abb644aa520180b77126d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blast: {fileID: 139924, guid: 102fcb8d0f0b93a4fa22b85fba591e54, type: 2}
-  duplicate: 0
-  subEnemy: {fileID: 0}
+  power: 1
 --- !u!114 &11479436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -118,6 +125,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 30
+  score: 10
+  duplicate: 0
+  blast: {fileID: 139924, guid: 102fcb8d0f0b93a4fa22b85fba591e54, type: 2}
+  enemyChild: {fileID: 0}
 --- !u!212 &21227518
 SpriteRenderer:
   m_ObjectHideFlags: 1

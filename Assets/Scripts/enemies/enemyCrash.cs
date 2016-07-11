@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class enemyCrash : MonoBehaviour {
+public class EnemyCrash : MonoBehaviour {
 
     private const int LAYER_FIELD = 9;
     private const int LAYER_CITY = 10;
@@ -9,7 +9,6 @@ public class enemyCrash : MonoBehaviour {
     public GameObject fieldBlast;
     public GameObject cityBlast;
     public int damage;
-    public int dificulty = 1;
 
     void Start () {
 

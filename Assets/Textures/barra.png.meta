@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 49c76a35ede61d04195d69eafeb23172
-timeCreated: 1452123972
+guid: 0c09297c9a3e6b64bacd8d9977153fb3
+timeCreated: 1468026543
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -61,7 +61,7 @@ TextureImporter:
         width: 270
         height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: barra_1
@@ -72,7 +72,7 @@ TextureImporter:
         width: 270
         height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: barra_2
@@ -82,8 +82,8 @@ TextureImporter:
         y: 0
         width: 270
         height: 25
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     outline: []

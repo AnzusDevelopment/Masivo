@@ -1,59 +1,51 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class InstantiateEnemy : MonoBehaviour {
 
-    private const float RANGE_XMAX = 2.4f;
-	private const float RANGE_XMIN = -2.4f;
-	private const float RANGE_YMAX = 11.0f;
-	private const float RANGE_YMIN = 8.0f;
-	
-	public GameObject[] enemies;
-    public float[] speedRanges;
-    public float[] frecuency;
-    public float startWait;    
+    public static readonly float[] INITIAL_POSITIONS = { -2.18f, -1.09f, 0.02f, 1.11f, 2.19f };
+    private static readonly float[] Z_RANGE = { -2.18f, -1.82f };
+    private const float Y_START_POINT = 8.0f;
 
-    private float xPos, yPos, zPos;
+    public GameObject[] enemies;
+    public int difficulty;
+
+    private float xPos, yPos;
     private Vector3 position;
-    private float[] speed;
-    private float velocityValue;
     private float numEnemies;
-    private int dificulty;
+    private float[] speeds;
+    private float time;
+    private List< GamePatterns.Tuple<int, float, int> > pattern;
 
     void Start () {
-        speed = new float[enemies.Length];
-        for ( int i = 0; i < enemies.Length; i++)
-        {
-            velocityValue = speedRanges[2 * i] + ( speedRanges[2 * i + 1] - speedRanges[2 * i] ) / 10;
-            speed[i] = velocityValue / 100;
-        }	
-		zPos = -2;
-        for (int i = 0; i < enemies.Length; i++)
-            StartCoroutine(generateEnemies(i));
+        GamePatterns gamePatterns = new GamePatterns();
+        pattern = gamePatterns.getPattern();
+        time = 0;
+        speeds = new float[enemies.Length];
+        for (var i = 0; i < enemies.Length; i++)
+            speeds[i] = (float)difficulty / 30;
 	}
-	
-    IEnumerator generateEnemies(int enemy)
+
+    void Update()
     {
-        dificulty = enemies[enemy].GetComponent<enemyCrash>().dificulty;
-        if (dificulty < 2)
-            yield return new WaitForSeconds(startWait);
-        else
-            yield return new WaitForSeconds(startWait + frecuency[enemy]);
-        while (true)
+        foreach(GamePatterns.Tuple<int, float, int> move in pattern)
         {
-            if (dificulty < 2)
-                numEnemies = Random.Range(1,3);
-            else
-                numEnemies = 1;
-            for (int j = 0; j < numEnemies; j++)
+            if ( time < move.Time ) break;
+
+            if ( time == move.Time )
             {
-                xPos = Random.Range(RANGE_XMIN, RANGE_XMAX);
-                yPos = Random.Range(RANGE_YMIN, RANGE_YMAX);
-                position = new Vector3(xPos, yPos, zPos);
-                GameObject clone = Instantiate(enemies[enemy], position, enemies[enemy].transform.rotation) as GameObject;
-                clone.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -speed[enemy]) / Time.fixedDeltaTime, ForceMode2D.Impulse);
+                xPos = INITIAL_POSITIONS[move.Line-1];
+                position = new Vector3( xPos, Y_START_POINT, Random.Range(Z_RANGE[0], Z_RANGE[1]) );
+                GameObject clone = Instantiate(enemies[move.Enemy], position, enemies[move.Enemy].transform.rotation) as GameObject;
+                clone.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -speeds[move.Enemy]) / Time.fixedDeltaTime, ForceMode2D.Impulse);
             }
-            yield return new WaitForSeconds(frecuency[enemy]);
+        }
+        time += 0.5f;
+        if(time > pattern[pattern.Count-1].Time + 200)
+        {
+            Application.Quit();
         }
     }
+
 }

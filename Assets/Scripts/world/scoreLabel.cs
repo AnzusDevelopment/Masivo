@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class scoreLabel : MonoBehaviour {
+public class ScoreLabel : MonoBehaviour {
 
     public Font myFont;
 
@@ -15,6 +15,6 @@ public class scoreLabel : MonoBehaviour {
         guiStyle.alignment = TextAnchor.MiddleLeft;
         GUI.Label(new Rect(Screen.width - 150, 20, 70, 40), "Puntaje: ", guiStyle);
         guiStyle.alignment = TextAnchor.MiddleRight;
-        GUI.Label(new Rect(Screen.width - 78, 20, 58, 40), scoreController.Instance.getScore().ToString(), guiStyle);
+        GUI.Label(new Rect(Screen.width - 78, 20, 58, 40), ScoreController.Instance.getScore().ToString(), guiStyle);
     }
 }

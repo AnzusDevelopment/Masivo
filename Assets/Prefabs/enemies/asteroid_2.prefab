@@ -17,7 +17,7 @@ GameObject:
   - 114: {fileID: 11408524}
   m_Layer: 8
   m_Name: asteroid_2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,6 +31,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.717781, y: -4.5500803, z: -2}
   m_LocalScale: {x: 1.3298405, y: 1.3298405, z: 1.3298405}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -83,14 +84,11 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108550}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30d435ced29abb644aa520180b77126d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blast: {fileID: 139924, guid: 102fcb8d0f0b93a4fa22b85fba591e54, type: 2}
-  duplicate: 0
-  subEnemy: {fileID: 0}
 --- !u!114 &11466634
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -105,7 +103,7 @@ MonoBehaviour:
   fieldBlast: {fileID: 154624, guid: a0d5fffe993a8bb4eaad7c7789a78900, type: 2}
   cityBlast: {fileID: 164830, guid: 12b0660052a93a44da47560b90b83bdc, type: 2}
   damage: 50
-  dificulty: 1
+  power: 1
 --- !u!114 &11488402
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -118,6 +116,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 30
+  score: 10
+  duplicate: 0
+  blast: {fileID: 139924, guid: 102fcb8d0f0b93a4fa22b85fba591e54, type: 2}
+  enemyChild: {fileID: 0}
 --- !u!212 &21292776
 SpriteRenderer:
   m_ObjectHideFlags: 1
