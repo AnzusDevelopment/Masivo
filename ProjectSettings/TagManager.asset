@@ -15,6 +15,7 @@ TagManager:
   - HealthBar
   - Enemy2
   - Enemy
+  - World
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - Enemy
   - Field
   - City
-  - 
+  - World
   - 
   - 
   - 

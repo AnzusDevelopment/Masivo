@@ -63,6 +63,48 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="First2D.CSharp.Plugins.csproj">
+      <Project>{FF3C9088-17E8-541A-47DC-D27C25BBC325}</Project>
+      <Name>First2D.CSharp.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\PlayFabSDK\Internal\ISerializer.cs" />
+    <Compile Include="Assets\PlayFabSDK\Internal\Log.cs" />
+    <Compile Include="Assets\PlayFabSDK\Internal\PlayFabHTTP.cs" />
+    <Compile Include="Assets\PlayFabSDK\Internal\PlayFabWebRequest.cs" />
+    <Compile Include="Assets\PlayFabSDK\Internal\PlayFabWww.cs" />
+    <Compile Include="Assets\PlayFabSDK\Internal\ResultContainer.cs" />
+    <Compile Include="Assets\PlayFabSDK\Internal\SimpleJson.cs" />
+    <Compile Include="Assets\PlayFabSDK\Internal\SingletonMonoBehaviour.cs" />
+    <Compile Include="Assets\PlayFabSDK\Internal\Testing\EventTest.cs" />
+    <Compile Include="Assets\PlayFabSDK\Internal\Testing\JsonUnitTests.cs" />
+    <Compile Include="Assets\PlayFabSDK\Internal\Testing\PlayFabApiTest_Client.cs" />
+    <Compile Include="Assets\PlayFabSDK\Internal\Testing\UtilTest.cs" />
+    <Compile Include="Assets\PlayFabSDK\Internal\Util.cs" />
+    <Compile Include="Assets\PlayFabSDK\Ionic.Zlib\CRC32.cs" />
+    <Compile Include="Assets\PlayFabSDK\Ionic.Zlib\Deflate.cs" />
+    <Compile Include="Assets\PlayFabSDK\Ionic.Zlib\DeflateStream.cs" />
+    <Compile Include="Assets\PlayFabSDK\Ionic.Zlib\GZipStream.cs" />
+    <Compile Include="Assets\PlayFabSDK\Ionic.Zlib\InfTree.cs" />
+    <Compile Include="Assets\PlayFabSDK\Ionic.Zlib\Inflate.cs" />
+    <Compile Include="Assets\PlayFabSDK\Ionic.Zlib\ParallelDeflateOutputStream.cs" />
+    <Compile Include="Assets\PlayFabSDK\Ionic.Zlib\ZTree.cs" />
+    <Compile Include="Assets\PlayFabSDK\Ionic.Zlib\Zlib.cs" />
+    <Compile Include="Assets\PlayFabSDK\Ionic.Zlib\ZlibBaseStream.cs" />
+    <Compile Include="Assets\PlayFabSDK\Ionic.Zlib\ZlibCodec.cs" />
+    <Compile Include="Assets\PlayFabSDK\Ionic.Zlib\ZlibConstants.cs" />
+    <Compile Include="Assets\PlayFabSDK\Ionic.Zlib\ZlibStream.cs" />
+    <Compile Include="Assets\PlayFabSDK\Public\PlayFabClientAPI.cs" />
+    <Compile Include="Assets\PlayFabSDK\Public\PlayFabClientModels.cs" />
+    <Compile Include="Assets\PlayFabSDK\Public\PlayFabSettings.cs" />
+    <Compile Include="Assets\PlayFabSDK\Uunit\PlayFabUUnitUtils.cs" />
+    <Compile Include="Assets\PlayFabSDK\Uunit\UUnitAssertException.cs" />
+    <Compile Include="Assets\PlayFabSDK\Uunit\UUnitIncrementalTestRunner.cs" />
+    <Compile Include="Assets\PlayFabSDK\Uunit\UUnitTestCase.cs" />
+    <Compile Include="Assets\PlayFabSDK\Uunit\UUnitTestContext.cs" />
+    <Compile Include="Assets\PlayFabSDK\Uunit\UUnitTestReport.cs" />
+    <Compile Include="Assets\PlayFabSDK\Uunit\UUnitTestSuite.cs" />
     <Compile Include="Assets\Scripts\camera\zoomToLevel.cs" />
     <Compile Include="Assets\Scripts\enemies\DestroyEnemy.cs" />
     <Compile Include="Assets\Scripts\enemies\EnemyCrash.cs" />
@@ -70,6 +112,9 @@
     <Compile Include="Assets\Scripts\enemies\InstantiateEnemy.cs" />
     <Compile Include="Assets\Scripts\enemies\RotateEnemy.cs" />
     <Compile Include="Assets\Scripts\global\GamePatterns.cs" />
+    <Compile Include="Assets\Scripts\home\DraggingWorld.cs" />
+    <Compile Include="Assets\Scripts\home\HomeController.cs" />
+    <Compile Include="Assets\Scripts\utils\Util.cs" />
     <Compile Include="Assets\Scripts\world\EnergyState.cs" />
     <Compile Include="Assets\Scripts\world\LevelController.cs" />
     <Compile Include="Assets\Scripts\world\ScoreController.cs" />
@@ -78,6 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
+    <None Include="Assets\PlayFabSDK\link.xml" />
     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />

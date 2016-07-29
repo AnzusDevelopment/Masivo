@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 6a84cce10d922c941b7709fb9cff62f5
+timeCreated: 1468338428
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: islands_0
+    21300002: islands_1
+    21300004: islands_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: islands_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 329
+        width: 272
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 59, y: 125.5}
+        - {x: 51, y: 127.5}
+        - {x: 30, y: 127.5}
+        - {x: -19, y: 82.5}
+        - {x: -33, y: 61.5}
+        - {x: -67, y: 48.5}
+        - {x: -86, y: 38.5}
+        - {x: -135, y: -22.5}
+        - {x: -136, y: -26.5}
+        - {x: -136, y: -57.5}
+        - {x: -120, y: -79.5}
+        - {x: -97, y: -100.5}
+        - {x: -58, y: -116.5}
+        - {x: -42, y: -120.5}
+        - {x: 18, y: -127.5}
+        - {x: 70, y: -127.5}
+        - {x: 136, y: -63.5}
+        - {x: 136, y: 27.5}
+        - {x: 103, y: 83.5}
+    - name: islands_1
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 0
+        width: 284
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 300}
+      outline:
+      - - {x: 141, y: -153}
+        - {x: 141, y: -114}
+        - {x: 140, y: -101}
+        - {x: 97, y: -7}
+        - {x: 61, y: 9}
+        - {x: -17, y: 9}
+        - {x: -27, y: -17}
+        - {x: -23, y: -24}
+        - {x: -24, y: -36}
+        - {x: -22, y: -42}
+        - {x: -14, y: -45}
+        - {x: -21, y: -59}
+        - {x: -18, y: -65}
+        - {x: -23, y: -54}
+        - {x: -46, y: -14}
+        - {x: -58, y: 9}
+        - {x: -90, y: 9}
+        - {x: -141, y: -24}
+        - {x: -141, y: -268}
+        - {x: -81, y: -303}
+        - {x: 55, y: -303}
+        - {x: 104, y: -270}
+        - {x: 136, y: -190}
+        - {x: 138, y: -177}
+        - {x: 132, y: -170}
+    - name: islands_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 50
+        width: 282
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 133, y: -39.5}
+        - {x: 141, y: -4.5}
+        - {x: 141, y: 73.5}
+        - {x: 103, y: 122.5}
+        - {x: 50, y: 122.5}
+        - {x: 42, y: 100.5}
+        - {x: -23, y: 101.5}
+        - {x: -103, y: 76.5}
+        - {x: -114, y: 40.5}
+        - {x: -135, y: 21.5}
+        - {x: -141, y: 1.5}
+        - {x: -141, y: -51.5}
+        - {x: -139, y: -61.5}
+        - {x: -133, y: -70.5}
+        - {x: -78, y: -108.5}
+        - {x: -52, y: -122.5}
+        - {x: 30, y: -122.5}
+        - {x: 51, y: -116.5}
+        - {x: 85, y: -95.5}
+        - {x: 123, y: -64.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

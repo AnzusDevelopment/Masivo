@@ -40,7 +40,7 @@ Material:
       data:
         first:
           name: _InvFade
-        second: .00999999978
+        second: 0.01
       data:
         first:
           name: _TexCoordScrollX
@@ -57,7 +57,7 @@ Material:
       data:
         first:
           name: _TintColor
-        second: {r: 1, g: 1, b: 1, a: .501960814}
+        second: {r: 1, g: 1, b: 1, a: 0.5019608}
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6
