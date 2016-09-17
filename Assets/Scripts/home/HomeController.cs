@@ -28,32 +28,33 @@ public class HomeController : MonoBehaviour
 
     void Update()
     {
-        if (timeStar == 10)
+        if (timeStar % 6 == 0 || timeStar == 0)
         {
-            clonedStars.Clear();
-            numberOfStars = (int)Random.Range(4, 9);
+            numberOfStars = (int)Random.Range(1, 3);
             for(var i = 0; i < numberOfStars; i++)
             {
                 starSelected = (int)Random.Range(0, sizeStars);
                 GameObject clonedStar = Instantiate(star, new Vector3(POS_STARS_X[starSelected], POS_STARS_Y[starSelected], -0.5f), Quaternion.identity) as GameObject;
-                float starScale = Random.Range(0.7f, 1.4f);
+                float starScale = Random.Range(0.75f, 1.5f);
                 clonedStar.transform.localScale = Vector3.one * starScale;
                 clonedStars.Add(clonedStar);
             }
         }
              
-        if(timeStar == 60)
+        if(timeStar == 59)
         {
             foreach(GameObject clonedStar in clonedStars)
                 Destroy(clonedStar);
             timeStar = 0;
+            clonedStars.Clear();
         }
         if (timeBird % 100 == 0 && timeBird <= numberOfBirds * 100)
         {
             float yPos = Random.Range(0.23f, -1.78f);
             float scaleBird = yPos >= 0 ? 0.12f + ( (0.23f - yPos)/0.23f ) * 0.12f : 0.24f + (Mathf.Abs(yPos) / 1.78f) * 0.95f;
+            float zPos = -2.2f - scaleBird / 1.19f * 2f;
             float animatorSpeed = Random.Range(1f, 1.3f);
-            GameObject clonedBird = Instantiate(bird, Vector3.up * yPos, Quaternion.identity) as GameObject;
+            GameObject clonedBird = Instantiate(bird, new Vector3(0, yPos, zPos), Quaternion.identity) as GameObject;
             Vector3 scaleBirdLocal = clonedBird.transform.GetChild(0).transform.GetChild(0).transform.localScale;
             clonedBird.transform.GetChild(0).transform.GetChild(0).transform.localScale = scaleBirdLocal  * scaleBird;
             Animator animatorMovement = clonedBird.transform.GetChild(0).GetComponent<Animator>();
@@ -75,7 +76,11 @@ public class HomeController : MonoBehaviour
             }
         }
         if (timeBird > 800)
+        {
+            numberOfBirds = (int)Random.Range(3, 5);
             timeBird = 0;
+        }
+            
         timeStar++;
         timeBird += 0.25f;
     }

@@ -1,15 +1,41 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 
-public class GamePatterns : MonoBehaviour {
+public class GamePatterns {
 
-    List<Tuple<int, float, int>> pattern_1 = new List<Tuple<int, float, int>>();
-    int numEnemies;
+    List<Tuple<int, float, int>> pattern = new List<Tuple<int, float, int>>();
 
-    public GamePatterns()
+    private int _numEnemies;
+    public int numEnemies
     {
-        numEnemies = 200;
+        get { return _numEnemies; }
+        set { _numEnemies = value;  }
+    }
+    private int _threeStarsScore;
+    public int threeStarsScore{
+        get { return _threeStarsScore; }
+        set { _threeStarsScore = value; }
+    }
+
+    private string fileName;  
+    private StreamWriter writer;
+    private StreamReader reader;
+
+    FileInfo file;
+
+    public GamePatterns(int world, int level)
+    {
+        pattern = new List<Tuple<int, float, int>>();
+        createLevel(1, 0, 0);
+        createLevel(1, 0, 1);
+        //readLevel(world, level);
+        readLevel(0, 1);
+    }
+
+    void createLevel(int numEnemies, int world, int level)
+    {
+        pattern = new List<Tuple<int, float, int>>();
         var time = 0f;
         int[] fibonacciNumbers = fibonacci();
 
@@ -22,15 +48,75 @@ public class GamePatterns : MonoBehaviour {
 
             var slot = (int)Random.Range(0, 6);
             if (slot != 0)
-                pattern_1.Add(new Tuple<int, float, int>(slot, time, 0));
+            {
+                if ((i % 3 == 0 && level != 0) && i != 0)
+                {
+                    if (slot == 1) slot = 2;
+                    if (slot == 5) slot = 4;
+                    pattern.Add(new Tuple<int, float, int>(slot, time, 2));
+                }
+                else
+                    pattern.Add(new Tuple<int, float, int>(slot, time, 2));
+            }
             else
                 i--;
         }
+        _threeStarsScore = 1400;
+        writeLevel("Level_" + (world+1) + "_" + (level+1), pattern, _threeStarsScore);
+    }
+
+    void writeLevel(string levelName, List<Tuple<int, float, int>> pattern, int maxScore)
+    {
+        string levelString = "";
+
+        foreach (GamePatterns.Tuple<int, float, int> move in pattern)
+            levelString += ";" + move.ToString();
+
+        levelString = levelString.Substring(1);
+
+        fileName = levelName;
+        file = new FileInfo(Application.persistentDataPath + "\\" + fileName + ".msv");
+
+        if (file.Exists)
+           file.Delete();
+
+        writer = file.CreateText();
+        writer.WriteLine(maxScore + "&" + levelString);
+        writer.Close();
+    }
+    
+    void readLevel(int world, int level)
+    {
+        pattern = new List<Tuple<int, float, int>>();
+        string levelName = "Level_" + (world + 1) + "_" + (level + 1);
+        string levelString = "";
+        string[] levelData;
+
+        file = new FileInfo(Application.persistentDataPath + "\\" + levelName + ".msv");
+        if (file.Exists)
+        {
+            reader = file.OpenText();
+            levelString = reader.ReadLine();
+
+            _threeStarsScore = int.Parse( levelString.Split('&')[0] );
+            levelData = levelString.Split('&')[1].Split(';');
+            numEnemies = levelData.Length;
+            foreach(string data in levelData)
+            {
+                string[] arrayData = data.Split(',');
+                int slot = int.Parse(arrayData[0]);
+                float time = float.Parse(arrayData[1]);
+                int enemy = int.Parse(arrayData[2]);
+                pattern.Add( new Tuple<int, float, int>(slot, time, enemy) );
+            }
+            reader.Close();
+        }
+        Debug.Log(levelString);
     }
 
     public List<Tuple<int, float, int>> getPattern()
     {
-        return this.pattern_1;
+        return this.pattern;
     }
 
     public int[] fibonacci()
@@ -59,6 +145,11 @@ public class GamePatterns : MonoBehaviour {
             Line = line;
             Time = time;
             Enemy = enemy;
+        }
+
+        public override string ToString()
+        {
+            return Line + "," + Time + "," + Enemy;
         }
     }
 

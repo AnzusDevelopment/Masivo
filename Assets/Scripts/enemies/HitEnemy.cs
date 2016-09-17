@@ -3,6 +3,18 @@ using System.Collections;
 
 public class HitEnemy : MonoBehaviour {
 
+    private int enemyCount;
+    private int sametime;
+
+    public InstantiateEnemy instantiateEnemy;
+
+    void Start()
+    {
+        instantiateEnemy = GameObject.Find("backWorld").GetComponent<InstantiateEnemy>();
+        enemyCount = 0;
+        sametime = 0;
+    }
+
     void Update()
     {
         Touch[] userTouches = Input.touches;
@@ -12,24 +24,39 @@ public class HitEnemy : MonoBehaviour {
             {
                 LayerMask layerMask = 1 << LayerMask.NameToLayer("Enemy");
                 RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(touch.position), Vector2.zero, 50, layerMask);
-                if (hit.transform.tag.Equals("Enemy"))
+                if(hit.transform != null)
                 {
-                    GameObject enemy = hit.transform.gameObject;
-                    GameObject blast = enemy.GetComponent<DestroyEnemy>().blast;
-                    Instantiate(blast, enemy.GetComponent<Transform>().position, Quaternion.identity);
-                    bool duplicate = enemy.GetComponent<DestroyEnemy>().duplicate;
-                    int destroyScore = enemy.GetComponent<DestroyEnemy>().score;
-                    if (duplicate)
+                    if (hit.transform.tag.Equals("Enemy"))
                     {
-                        GameObject enemyChild = enemy.GetComponent<DestroyEnemy>().enemyChild;
-                        Vector3 enemyPosition = enemy.GetComponent<Transform>().position;
-                        StartCoroutine( createChildEnemy(enemyPosition, enemyChild) );
+                        GameObject enemy = hit.transform.gameObject;
+                        GameObject blast = enemy.GetComponent<DestroyEnemy>().blast;
+                        Instantiate(blast, enemy.GetComponent<Transform>().position, Quaternion.identity);
+                        bool duplicate = enemy.GetComponent<DestroyEnemy>().duplicate;
+                        int destroyScore = enemy.GetComponent<DestroyEnemy>().score;
+                        if (duplicate)
+                        {
+                            GameObject enemyChild = enemy.GetComponent<DestroyEnemy>().enemyChild;
+                            Vector3 enemyPosition = enemy.GetComponent<Transform>().position;
+                            StartCoroutine(createChildEnemy(enemyPosition, enemyChild));
+                            instantiateEnemy.enemiesLeft += 2;
+                        }
+                        ScoreController.Instance.setScore(ScoreController.Instance.getScore() + destroyScore);
+                        Destroy(enemy);
+                        instantiateEnemy.enemiesLeft -= 1;
+                        enemyCount++;
                     }
-                    ScoreController.Instance.setScore(ScoreController.Instance.getScore() + destroyScore);
-                    Destroy(enemy);
                 }
             }
         }
+        if(sametime == 8)
+        {
+            if (enemyCount > 2)
+                ScoreController.Instance.setScore(ScoreController.Instance.getScore() + 10 * (enemyCount - 1));
+                
+            sametime = 0;
+            enemyCount = 0;
+        }
+        sametime++;
     }
 
     IEnumerator createChildEnemy(Vector3 enemyPosition, GameObject enemyChild)
@@ -42,16 +69,16 @@ public class HitEnemy : MonoBehaviour {
         float xPosOriginLeft = slot > 0 ? InstantiateEnemy.INITIAL_POSITIONS[slot - 1] : 0;
         float xPosOriginRight = slot < 4 ? InstantiateEnemy.INITIAL_POSITIONS[slot + 1] : 0;
 
-        if ( xPosOriginLeft != 0 )
+        if (xPosOriginLeft != 0)
         {
-            clone = Instantiate(enemyChild, new Vector3(xPosOriginLeft, enemyPosition.y + 0.18f, 0), Quaternion.identity) as GameObject;
-            clone.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -0.05f) / Time.fixedDeltaTime, ForceMode2D.Impulse);
+            clone = Instantiate(enemyChild, new Vector3(xPosOriginLeft, enemyPosition.y + 0.48f, 0), Quaternion.identity) as GameObject;
+            clone.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -0.048f) / Time.fixedDeltaTime, ForceMode2D.Impulse);
         }
 
-        if ( xPosOriginRight != 0 )
+        if (xPosOriginRight != 0)
         {
-            clone = Instantiate(enemyChild, new Vector3(xPosOriginRight, enemyPosition.y + 0.18f, 0), Quaternion.identity) as GameObject;
-            clone.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -0.05f) / Time.fixedDeltaTime, ForceMode2D.Impulse);
+            clone = Instantiate(enemyChild, new Vector3(xPosOriginRight, enemyPosition.y + 0.48f, 0), Quaternion.identity) as GameObject;
+            clone.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -0.048f) / Time.fixedDeltaTime, ForceMode2D.Impulse);
         } 
         
     }

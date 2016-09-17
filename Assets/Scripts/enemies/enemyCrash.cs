@@ -8,10 +8,14 @@ public class EnemyCrash : MonoBehaviour {
 
     public GameObject fieldBlast;
     public GameObject cityBlast;
+
+    public bool cityHarmless = false; 
     public int damage;
 
-    void Start () {
+    public InstantiateEnemy instantiateEnemy;
 
+    void Start () {
+        instantiateEnemy = GameObject.Find("backWorld").GetComponent<InstantiateEnemy>();
     }
 
     void Update(){
@@ -22,10 +26,17 @@ public class EnemyCrash : MonoBehaviour {
         if ( collision.gameObject.layer == LAYER_FIELD ){
             GameObject.Find("backWorld").GetComponent<EnergyState>().damage(damage);
             Instantiate( fieldBlast, gameObject.GetComponent<Transform>().position + new Vector3( 0, -0.5f, 0 ), Quaternion.identity );
+            if(!cityHarmless)
+                instantiateEnemy.enemiesLeft = instantiateEnemy.enemiesLeft - 1;
             Destroy(gameObject);
-        }else if ( collision.gameObject.layer == LAYER_CITY )
+        }
+        else if ( collision.gameObject.layer == LAYER_CITY )
         {
-            Instantiate(cityBlast, gameObject.GetComponent<Transform>().position, Quaternion.identity);
+            if (!cityHarmless)
+            {
+                Instantiate(cityBlast, gameObject.GetComponent<Transform>().position, Quaternion.identity);
+                instantiateEnemy.enemiesLeft = instantiateEnemy.enemiesLeft - 1;
+            }
             Destroy(gameObject);
         }
     }

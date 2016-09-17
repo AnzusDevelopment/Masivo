@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 0df33d49c79476d438cd0ddf3e97e084
+timeCreated: 1471278713
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - panelLevels: {fileID: 139298, guid: 879bf49fa5da3d74baa478c118eb9d54, type: 2}
+  - loadingWindow: {fileID: 125524, guid: bf9b0325ed7f0bf41b8c8e13b5af07de, type: 2}
+  - button: {fileID: 177292, guid: 78816524d9cbfb24aa56710843e240b6, type: 2}
+  - buttonPending: {fileID: 21300000, guid: 18cd96c1c92f6c541992077dfe49bb60, type: 3}
+  - buttonOk: {fileID: 21300020, guid: 18cd96c1c92f6c541992077dfe49bb60, type: 3}
+  - buttonOneStar: {fileID: 21300022, guid: 18cd96c1c92f6c541992077dfe49bb60, type: 3}
+  - buttonTwoStars: {fileID: 21300024, guid: 18cd96c1c92f6c541992077dfe49bb60, type: 3}
+  - buttonThreeStars: {fileID: 21300026, guid: 18cd96c1c92f6c541992077dfe49bb60, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

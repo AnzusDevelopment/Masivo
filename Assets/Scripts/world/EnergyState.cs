@@ -10,6 +10,8 @@ public class EnergyState : MonoBehaviour {
     private int energyLeft;
     private int timeField = 0;
     private bool blink = false;
+    private Vector3 localPosition;
+
     private static EnergyState instance;
 
     static public bool isActive
@@ -42,7 +44,8 @@ public class EnergyState : MonoBehaviour {
     {  
         GameObject.Find( ENERGY_NAME ).GetComponent<Transform>().localScale = new Vector3(1, 1.0f, 1);
         energyLeft = startEnergy;
-        GameObject.Find("energyBar").GetComponent<Transform>().localScale = new Vector3(0.97F * energyLeft / maxEnergy, 0.75F, 1);
+        GameObject.Find("energyBar").GetComponent<Transform>().localScale = new Vector3(0.98F * energyLeft / maxEnergy, 0.75F, 1);
+        localPosition = GameObject.Find("energyBar").GetComponent<Transform>().position;
     }
 
     void Update()
@@ -50,9 +53,9 @@ public class EnergyState : MonoBehaviour {
         if ( blink == true && GameObject.Find("field") != null )
         {
             if (timeField % 5 == 0 && timeField > 0)
-                GameObject.Find("field").GetComponent<SpriteRenderer>().color = new Color(167 / 255F, 248 / 255F, 1F, 229 / 255F);
+                GameObject.Find("field").GetComponent<SpriteRenderer>().color = new Color(0 / 255F, 202 / 255F, 1F, 60 / 255F);
             else
-                GameObject.Find("field").GetComponent<SpriteRenderer>().color = new Color(167 / 255F, 248 / 255F, 1F, 120 / 255F);
+                GameObject.Find("field").GetComponent<SpriteRenderer>().color = new Color(0 / 255F, 202 / 255F, 1F, 25 / 255F);
             timeField++;
             if (timeField == 51)
             {
@@ -78,7 +81,9 @@ public class EnergyState : MonoBehaviour {
 
     void updateBar()
     {
-        GameObject.Find("energyBar").GetComponent<Transform>().localScale = new Vector3(0.97F * energyLeft / maxEnergy, 0.75F, 1);
+        localPosition = new Vector3(localPosition.x, localPosition.y + 0.009f, localPosition.z);
+        GameObject.Find("energyBar").GetComponent<Transform>().localScale = new Vector3(0.98f * energyLeft / maxEnergy, 0.75F, 1);
+        GameObject.Find("energyBar").GetComponent<Transform>().position = localPosition;
     }
 
     void blinkField()

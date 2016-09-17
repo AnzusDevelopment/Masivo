@@ -12,8 +12,7 @@ GameObject:
   - 114: {fileID: 11465026}
   - 114: {fileID: 11458554}
   - 114: {fileID: 11485410}
-  - 114: {fileID: 11400846}
-  - 114: {fileID: 11491250}
+  - 114: {fileID: 11476422}
   m_Layer: 0
   m_Name: backWorld
   m_TagString: Untagged
@@ -34,17 +33,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11400846
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a690a7d8ece351b4f9302afc7e71f4a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11436830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -56,11 +44,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b410586538da5e4aa63477f4cf67fc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  difficulty: 1
   enemies:
   - {fileID: 112720, guid: 8cbb3e87116f39e40a21fd5551ed3b75, type: 2}
-  - {fileID: 178276, guid: 728ec2b7bb14d644e82ee99e0bac9f9b, type: 2}
   - {fileID: 128628, guid: 76b7c2ed5e4dd664c8d7ddf8f7b4654e, type: 2}
-  difficulty: 1
+  - {fileID: 193630, guid: 0799af16b64b5c14db94959ca5a8b4f9, type: 2}
+  loadingWindow: {fileID: 125524, guid: bf9b0325ed7f0bf41b8c8e13b5af07de, type: 2}
+  playFabTitleId: 63E3
 --- !u!114 &11458554
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -87,6 +77,25 @@ MonoBehaviour:
   energyBar: {fileID: 127804, guid: 9f9b3577d21ee5449aa363e9c791aa77, type: 2}
   maxEnergy: 200
   startEnergy: 200
+--- !u!114 &11476422
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 034aa9ba568b91843b585fdc90108c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonOk: {fileID: 21300020, guid: 18cd96c1c92f6c541992077dfe49bb60, type: 3}
+  buttonOneStar: {fileID: 21300022, guid: 18cd96c1c92f6c541992077dfe49bb60, type: 3}
+  buttonTwoStars: {fileID: 21300024, guid: 18cd96c1c92f6c541992077dfe49bb60, type: 3}
+  buttonThreeStars: {fileID: 21300026, guid: 18cd96c1c92f6c541992077dfe49bb60, type: 3}
+  panelNextLevel: {fileID: 0}
+  panelPaused: {fileID: 0}
+  panelFailed: {fileID: 0}
+  loadingWindow: {fileID: 0}
 --- !u!114 &11485410
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -98,17 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30d435ced29abb644aa520180b77126d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11491250
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccc53c2100d51be4d903201c0ebb63f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  instantiateEnemy: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
