@@ -24,6 +24,8 @@ public class HomeController : MonoBehaviour
     void Start()
     {
         numberOfBirds = (int)Random.Range(3, 5);
+        GamePatterns gamePatterns = new GamePatterns();
+        gamePatterns.createLevels();
     }
 
     void Update()

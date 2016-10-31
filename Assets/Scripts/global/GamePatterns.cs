@@ -24,13 +24,60 @@ public class GamePatterns {
 
     FileInfo file;
 
+    public GamePatterns()
+    {
+
+    }
+
     public GamePatterns(int world, int level)
     {
         pattern = new List<Tuple<int, float, int>>();
-        createLevel(1, 0, 0);
-        createLevel(1, 0, 1);
-        //readLevel(world, level);
-        readLevel(0, 1);
+
+        Debug.Log(world + "   " + level);
+
+        /*createLevel(15, 0, 0);
+        createLevel(15, 0, 1);
+        createLevel(15, 0, 2);
+        createLevel(15, 0, 3);
+        createLevel(15, 0, 4);
+        createLevel(15, 0, 5);
+        createLevel(15, 0, 6);
+        createLevel(15, 0, 7);
+        createLevel(15, 0, 8);
+        createLevel(15, 0, 9);
+
+        createLevel(15, 1, 0);
+        createLevel(15, 1, 1);
+        createLevel(15, 1, 2);
+        createLevel(15, 1, 3);
+        createLevel(15, 1, 4);
+        createLevel(15, 1, 5);
+        createLevel(15, 1, 6);
+        createLevel(15, 1, 7);
+        createLevel(15, 1, 8);
+        createLevel(15, 1, 9);
+
+        createLevel(15, 3, 0);
+        createLevel(15, 3, 1);
+        createLevel(15, 3, 2);
+        createLevel(15, 3, 3);
+        createLevel(15, 3, 4);
+        createLevel(15, 3, 5);
+        createLevel(15, 3, 6);
+        createLevel(15, 3, 7);
+        createLevel(15, 3, 8);
+        createLevel(15, 3, 9);*/
+
+        //createLevels();
+
+        readLevel(world, level);
+    }
+
+    public void createLevels()
+    {
+        for(var i = 0; i < 3; i++)
+            for(var j = 0; j < 9; j++)
+                createLevel(100, i, j);
     }
 
     void createLevel(int numEnemies, int world, int level)
@@ -39,29 +86,140 @@ public class GamePatterns {
         var time = 0f;
         int[] fibonacciNumbers = fibonacci();
 
-        for (var i = 0; i < numEnemies; i++)
+        if(world == 0)
         {
-            if (System.Array.IndexOf(fibonacciNumbers, i + 1) != -1)
-                time += 65f;
-            else
-                time += 18f;
-
-            var slot = (int)Random.Range(0, 6);
-            if (slot != 0)
+            for (var i = 0; i < numEnemies; i++)
             {
-                if ((i % 3 == 0 && level != 0) && i != 0)
+                if (System.Array.IndexOf(fibonacciNumbers, i + 1) != -1)
+                    time += 48f;
+                else
+                    time += 10f;
+
+                if ( level < 3)
                 {
-                    if (slot == 1) slot = 2;
-                    if (slot == 5) slot = 4;
-                    pattern.Add(new Tuple<int, float, int>(slot, time, 2));
+                    var slot = (int)Random.Range(0, 6);
+                    if (slot != 0)
+                        pattern.Add(new Tuple<int, float, int>(slot, time, 0));
+                    else
+                        i--;
+                }
+                if (level >= 3 && level < 6)
+                {
+                    var slot = (int)Random.Range(0, 6);
+                    if (slot != 0)
+                    {
+                        if ((i % 3 == 0 && level != 0) && i != 0)
+                        {
+                            if (slot == 1) slot = 2;
+                            if (slot == 5) slot = 4;
+                            pattern.Add(new Tuple<int, float, int>(slot, time, 1));
+                        }
+                        else
+                            pattern.Add(new Tuple<int, float, int>(slot, time, 0));
+                    }
+                    else
+                        i--;
+                }
+                if (level >= 6)
+                {
+                    var slot = (int)Random.Range(0, 6);
+                    if (slot != 0)
+                    {
+                        if ((i % 3 == 0 && level != 0) && i != 0)
+                        {
+                            if (slot == 1) slot = 2;
+                            if (slot == 5) slot = 4;
+                            pattern.Add(new Tuple<int, float, int>(slot, time, 1));
+                        }
+                        else
+                            pattern.Add(new Tuple<int, float, int>(slot, time, 2));
+                    }
+                    else
+                        i--;
+                }
+            }
+        }
+        if (world == 1)
+        {
+            for (var i = 0; i < numEnemies; i++)
+            {
+                if (System.Array.IndexOf(fibonacciNumbers, i + 1) != -1)
+                    time += 48f;
+                else
+                    time += 10f;
+
+                if (level < 3)
+                {
+                    var slot = (int)Random.Range(0, 6);
+                    if (slot != 0)
+                        pattern.Add(new Tuple<int, float, int>(slot, time, 4));
+                    else
+                        i--;
+                }
+                if (level >= 3 && level < 6)
+                {
+                    var slot = (int)Random.Range(0, 6);
+                    if (slot != 0)
+                    {
+                        if ((i % 3 == 0 && level != 0) && i != 0)
+                            pattern.Add(new Tuple<int, float, int>(slot, time, 3));
+                        else
+                            pattern.Add(new Tuple<int, float, int>(slot, time, 4));
+                    }
+                    else
+                        i--;
+                }
+                if (level >= 6)
+                {
+                    var slot = (int)Random.Range(0, 6);
+                    if (slot != 0)
+                    {
+                        if(i % 4 == 0 && i != 0)
+                            pattern.Add(new Tuple<int, float, int>(slot, time, 5));
+                        else if (i % 3 == 0 && i != 0)
+                            pattern.Add(new Tuple<int, float, int>(slot, time, 3));
+                        else
+                            pattern.Add(new Tuple<int, float, int>(slot, time, 4));
+                    }
+                    else
+                        i--;
+                }
+            }
+        }
+        if (world == 2)
+        {
+            for (var i = 0; i < numEnemies; i++)
+            {
+                if (System.Array.IndexOf(fibonacciNumbers, i + 1) != -1)
+                    time += 48f;
+                else
+                    time += 10f;
+
+                if (level < 3)
+                {
+                    var slot = (int)Random.Range(0, 6);
+                    if (slot != 0)
+                        pattern.Add(new Tuple<int, float, int>(slot, time, 6));
+                    else
+                        i--;
                 }
                 else
-                    pattern.Add(new Tuple<int, float, int>(slot, time, 2));
+                {
+                    var slot = (int)Random.Range(0, 6);
+                    if (slot != 0)
+                    {
+                        if ((i % 3 == 0 && level != 0) && i != 0)
+                            pattern.Add(new Tuple<int, float, int>(slot, time, 6));
+                        else
+                            pattern.Add(new Tuple<int, float, int>(slot, time, 7));
+                    }
+                    else
+                        i--;
+                }
             }
-            else
-                i--;
         }
-        _threeStarsScore = 1400;
+
+        _threeStarsScore = numEnemies * 10 + 200;
         writeLevel("Level_" + (world+1) + "_" + (level+1), pattern, _threeStarsScore);
     }
 

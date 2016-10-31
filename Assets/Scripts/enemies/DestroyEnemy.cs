@@ -9,6 +9,7 @@ public class DestroyEnemy : MonoBehaviour {
     public int score = 10;
     public int maxScore = 10;
     public bool duplicate;
+    public bool leftTrash;
     public GameObject blast;
     public GameObject enemyChild;
     public InstantiateEnemy instantiateEnemy;

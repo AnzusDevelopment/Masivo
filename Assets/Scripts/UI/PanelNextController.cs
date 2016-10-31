@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PanelNextController : MonoBehaviour {
@@ -24,11 +25,23 @@ public class PanelNextController : MonoBehaviour {
                 {
                     GameObject.Find("backWorld").GetComponent<LevelController>().loadingWindow.SetActive(true);
                     if (raycast.transform.name.Equals("buttonMenu"))
-                        SceneManager.LoadScene("Home");
+                        StartCoroutine(loadHome());
                     if (raycast.transform.name.Equals("buttonNext"))
-                        SceneManager.LoadScene("LevelsWorld_0");
+                        StartCoroutine(loadLevel());
                 }
             }
         }
+    }
+
+    IEnumerator loadLevel()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(AdvanceController.instance.levelScenes[AdvanceController.instance.activeWorld]);
+    }
+
+    IEnumerator loadHome()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene("Home");
     }
 }

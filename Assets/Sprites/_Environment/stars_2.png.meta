@@ -1,0 +1,400 @@
+fileFormatVersion: 2
+guid: 9736c225c37b9fa428602fd959d40b5b
+timeCreated: 1474511126
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: stars_2_0
+    21300002: stars_2_1
+    21300004: stars_2_2
+    21300006: stars_2_3
+    21300008: stars_2_4
+    21300010: stars_2_5
+    21300012: stars_2_6
+    21300014: stars_2_7
+    21300016: stars_2_8
+    21300018: stars_2_9
+    21300020: stars_2_10
+    21300022: stars_2_11
+    21300024: stars_2_12
+    21300026: stars_2_13
+    21300028: stars_2_14
+    21300030: stars_2_15
+    21300032: stars_2_16
+    21300034: stars_2_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: stars_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1223
+        width: 705
+        height: 709
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33.5, y: 142.7533}
+        - {x: -45.5, y: 142.7533}
+        - {x: -141.5, y: 58.753296}
+        - {x: -141.5, y: -30.246704}
+        - {x: 3.5, y: -142.2467}
+        - {x: 15.5, y: -142.2467}
+        - {x: 141.5, y: 6.753296}
+        - {x: 141.5, y: 11.753296}
+    - name: stars_2_1
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1269
+        width: 658
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 55.94745, y: 135.6929}
+        - {x: 24.947449, y: 135.6929}
+        - {x: -132.05255, y: 61.6929}
+        - {x: -132.05255, y: 43.6929}
+        - {x: -51.05255, y: -134.3071}
+        - {x: -40.05255, y: -134.3071}
+        - {x: -8.052551, y: -82.3071}
+        - {x: 132.94745, y: -47.3071}
+        - {x: 132.94745, y: -41.3071}
+    - name: stars_2_2
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 1351
+        width: 509
+        height: 528
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 98.85608, y: 107.06354}
+        - {x: -102.14392, y: 107.06354}
+        - {x: -102.14392, y: 5.0635376}
+        - {x: -99.14392, y: -105.93646}
+        - {x: -1.1439209, y: -105.93646}
+        - {x: 101.85608, y: -96.93646}
+        - {x: 102.85608, y: -95.93646}
+        - {x: 102.85608, y: 41.063538}
+        - {x: 98.85608, y: 106.06354}
+    - name: stars_2_3
+      rect:
+        serializedVersion: 2
+        x: 3035
+        y: 1376
+        width: 506
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -74.38611, y: 111.08508}
+        - {x: -101.38611, y: -39.914917}
+        - {x: -101.38611, y: -54.914917}
+        - {x: -88.38611, y: -51.914917}
+        - {x: 30.613892, y: -109.91492}
+        - {x: 98.61389, y: -109.91492}
+        - {x: 102.61389, y: -34.914917}
+        - {x: 102.61389, y: 111.08508}
+    - name: stars_2_4
+      rect:
+        serializedVersion: 2
+        x: 3935
+        y: 1443
+        width: 431
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.388916, y: 107.94275}
+        - {x: -86.611084, y: 8.942749}
+        - {x: -86.611084, y: -3.057251}
+        - {x: -78.611084, y: -4.057251}
+        - {x: -22.611084, y: -107.05725}
+        - {x: 7.388916, y: -107.05725}
+        - {x: 87.388916, y: -14.057251}
+        - {x: 87.388916, y: 0.942749}
+        - {x: 16.388916, y: 107.94275}
+    - name: stars_2_5
+      rect:
+        serializedVersion: 2
+        x: 4699
+        y: 1535
+        width: 410
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 59.146973, y: 57.82202}
+        - {x: 19.146973, y: 31.822021}
+        - {x: -64.85303, y: 66.82202}
+        - {x: -64.85303, y: 60.82202}
+        - {x: -60.853027, y: 55.82202}
+        - {x: -81.85303, y: 14.8220215}
+        - {x: -81.85303, y: -70.17798}
+        - {x: 67.14697, y: -70.17798}
+        - {x: 83.14697, y: 57.82202}
+        - {x: 83.14697, y: 70.82202}
+        - {x: 82.14697, y: 70.82202}
+        - {x: 76.14697, y: 68.82202}
+    - name: stars_2_6
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 578
+        width: 437
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -58.625168, y: 71.1978}
+        - {x: -87.62517, y: -9.8022}
+        - {x: -87.62517, y: -69.8022}
+        - {x: 25.374832, y: -69.8022}
+        - {x: 88.37483, y: 21.1978}
+        - {x: 88.37483, y: 28.1978}
+        - {x: -9.625168, y: 71.1978}
+    - name: stars_2_7
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 677
+        width: 368
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.9276733, y: 63.383057}
+        - {x: -73.92767, y: 21.383057}
+        - {x: -73.92767, y: -3.6169434}
+        - {x: -12.927673, y: -62.616943}
+        - {x: 6.0723267, y: -62.616943}
+        - {x: 75.07233, y: -27.616943}
+        - {x: 75.07233, y: -0.61694336}
+        - {x: 13.072327, y: 63.383057}
+    - name: stars_2_8
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 700
+        width: 333
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.325806, y: 57.602875}
+        - {x: -12.674194, y: 57.602875}
+        - {x: -66.674194, y: 30.602875}
+        - {x: -66.674194, y: -5.3971252}
+        - {x: -10.674194, y: -56.397125}
+        - {x: -3.6741943, y: -56.397125}
+        - {x: -0.67419434, y: -46.397125}
+        - {x: 68.325806, y: -22.397125}
+        - {x: 68.325806, y: 2.6028748}
+    - name: stars_2_9
+      rect:
+        serializedVersion: 2
+        x: 3314
+        y: 770
+        width: 195
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.954102, y: 38.663147}
+        - {x: 11.954102, y: 25.663147}
+        - {x: -38.0459, y: 36.663147}
+        - {x: -39.0459, y: 36.663147}
+        - {x: -39.0459, y: 9.663147}
+        - {x: -31.045898, y: -37.336853}
+        - {x: 39.9541, y: -37.336853}
+        - {x: 39.9541, y: -24.336853}
+        - {x: 31.954102, y: 38.663147}
+    - name: stars_2_10
+      rect:
+        serializedVersion: 2
+        x: 4147
+        y: 804
+        width: 130
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.871582, y: 30.29242}
+        - {x: -13.128418, y: 30.29242}
+        - {x: -26.128418, y: 29.29242}
+        - {x: -26.128418, y: -10.707581}
+        - {x: -23.128418, y: -29.70758}
+        - {x: 26.871582, y: -29.70758}
+        - {x: 26.871582, y: -24.70758}
+    - name: stars_2_11
+      rect:
+        serializedVersion: 2
+        x: 4856
+        y: 797
+        width: 131
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27.582153, y: -24.01361}
+        - {x: 13.582153, y: -5.013611}
+        - {x: 19.582153, y: 23.98639}
+        - {x: 20.582153, y: 28.98639}
+        - {x: 19.582153, y: 29.98639}
+        - {x: 15.582153, y: 29.98639}
+        - {x: 9.582153, y: 23.98639}
+        - {x: -26.417847, y: 28.98639}
+        - {x: -26.417847, y: 4.986389}
+        - {x: -21.417847, y: -29.01361}
+        - {x: -15.417847, y: -29.01361}
+        - {x: -6.4178467, y: -19.01361}
+        - {x: 21.582153, y: -29.01361}
+        - {x: 27.582153, y: -29.01361}
+    - name: stars_2_12
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 0
+        width: 93
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.37033, y: -23}
+        - {x: 19.37033, y: -19}
+        - {x: 15.370331, y: 23}
+        - {x: -11.629669, y: 23}
+        - {x: -18.62967, y: 21}
+        - {x: -18.62967, y: -16}
+        - {x: -16.62967, y: -23}
+        - {x: -8.629669, y: -23}
+        - {x: -2.6296692, y: -17}
+        - {x: 0.3703308, y: -11}
+        - {x: 14.370331, y: -23}
+    - name: stars_2_13
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 26
+        width: 100
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.811401, y: 23.422392}
+        - {x: -19.811401, y: 1.4223919}
+        - {x: -10.811401, y: -22.577608}
+        - {x: 13.188599, y: -22.577608}
+        - {x: 21.188599, y: -18.577608}
+        - {x: 21.188599, y: -9.577608}
+        - {x: 9.188599, y: 23.422392}
+    - name: stars_2_14
+      rect:
+        serializedVersion: 2
+        x: 2261
+        y: 109
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stars_2_15
+      rect:
+        serializedVersion: 2
+        x: 3387
+        y: 80
+        width: 196
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stars_2_16
+      rect:
+        serializedVersion: 2
+        x: 4122
+        y: 97
+        width: 175
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stars_2_17
+      rect:
+        serializedVersion: 2
+        x: 4768
+        y: 114
+        width: 149
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

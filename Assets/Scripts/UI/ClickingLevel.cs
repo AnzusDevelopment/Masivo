@@ -1,12 +1,11 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ClickingLevel : MonoBehaviour {
 
     private int buttonNumber;
     private int[] maxLevel;
-    private UserData userData;
     private GameData gameData;
 
     private LayerMask layerMask;
@@ -14,12 +13,10 @@ public class ClickingLevel : MonoBehaviour {
     private RaycastHit2D raycast;
 
     void Start () {
-        userData = GameObject.Find("GameController").GetComponent<UserData>();
         gameData = GameObject.Find("GameController").GetComponent<GameData>();
     }
 	
 	void Update () {
-
         if (Input.GetMouseButtonDown(0))
         {
             layerMask = 1 << LayerMask.NameToLayer("ButtonLevel");
@@ -28,24 +25,24 @@ public class ClickingLevel : MonoBehaviour {
             {
                 if (raycast.transform.tag.Equals("ButtonLevel"))
                 {
-                    maxLevel = userData.levelInfo.maxLevel;
+                    maxLevel = AdvanceController.instance.maxLevel;
                     button = raycast.collider.gameObject;
                     buttonNumber = int.Parse( button.name.Substring(button.name.Length - 1) ) - 1;
 
-                    if (buttonNumber < maxLevel[gameData.actualworld] || maxLevel[gameData.actualworld] == 0)
-                        loadLevel(buttonNumber, gameData.actualworld);
+                    if (buttonNumber <= maxLevel[gameData.actualworld] || maxLevel[gameData.actualworld] == 0)
+                        StartCoroutine( loadLevel(buttonNumber, gameData.actualworld) );
                 }
             }
         }
-
     }
 
-    void loadLevel(int level, int world)
+    IEnumerator loadLevel(int level, int world)
     {
-        PlayerPrefs.SetInt(PlayerPrefsName.PLAYER_ACTUAL_WORLD, world);
-        PlayerPrefs.SetInt(PlayerPrefsName.PLAYER_ACTUAL_LEVEL, level);
-        PlayerPrefs.SetString(PlayerPrefsName.PLAYER_LEVEL_INFO, userData.levelInfo.toStringPrefs());
         gameData.loadingWindow.SetActive(true);
-        SceneManager.LoadScene("LevelsWorld_0");
+        AdvanceController.instance.activeLevel = level;
+        AdvanceController.instance.activeWorld = world;
+        PlayerPrefs.SetString(PlayerPrefsName.PLAYER_LEVEL_INFO, AdvanceController.instance.toStringPrefs());
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(AdvanceController.instance.levelScenes[world]);
     }
 }

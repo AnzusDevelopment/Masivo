@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 5e9a44aefa8f92b448fb9d4b067de0d2
+timeCreated: 1474339658
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: city2_0
+    21300002: city2_1
+    21300004: city2_2
+    21300006: city2_3
+    21300008: city2_4
+    21300010: city2_5
+    21300012: city2_6
+    21300014: city2_7
+    21300016: city2_8
+    21300018: city2_9
+    21300020: city2_10
+    21300022: city2_11
+    21300024: city2_12
+    21300026: city2_13
+    21300028: city2_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: city2_0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1950
+        width: 582
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -70.380745, y: 31.25061}
+        - {x: -93.380745, y: 5.2506104}
+        - {x: -93.380745, y: -21.74939}
+        - {x: -78.380745, y: -30.74939}
+        - {x: 94.619255, y: -30.74939}
+        - {x: 94.619255, y: -1.7493896}
+        - {x: 25.619255, y: 31.25061}
+    - name: city2_1
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 1804
+        width: 112
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.095734, y: 48.86206}
+        - {x: -18.095734, y: -48.13794}
+        - {x: 17.904266, y: -48.13794}
+        - {x: 18.904266, y: -40.13794}
+        - {x: 18.904266, y: 33.86206}
+        - {x: 13.904266, y: 48.86206}
+    - name: city2_2
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 1657
+        width: 199
+        height: 461
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.062988, y: 74.652405}
+        - {x: -32.06299, y: 55.652405}
+        - {x: -32.06299, y: -74.347595}
+        - {x: 32.93701, y: -74.347595}
+        - {x: 32.93701, y: 38.652405}
+        - {x: 10.937012, y: 74.652405}
+    - name: city2_3
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 1657
+        width: 208
+        height: 461
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.4282837, y: 74.652405}
+        - {x: -9.428284, y: 74.652405}
+        - {x: -13.428284, y: 66.652405}
+        - {x: -33.428284, y: -6.347595}
+        - {x: -33.428284, y: -59.347595}
+        - {x: -23.428284, y: -74.347595}
+        - {x: 25.571716, y: -74.347595}
+        - {x: 34.571716, y: -71.347595}
+        - {x: 34.571716, y: -39.347595}
+        - {x: 27.571716, y: 3.6524048}
+    - name: city2_4
+      rect:
+        serializedVersion: 2
+        x: 2377
+        y: 2
+        width: 4000
+        height: 2246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -642.1166, y: 361.6423}
+        - {x: -642.1166, y: -360.3577}
+        - {x: 642.8834, y: -360.3577}
+        - {x: 642.8834, y: 361.6423}
+    - name: city2_5
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1050
+        width: 1207
+        height: 778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 154.08272, y: 125.71185}
+        - {x: 83.08272, y: 125.71185}
+        - {x: 72.08272, y: 114.71185}
+        - {x: 68.08272, y: 97.71185}
+        - {x: 68.08272, y: 91.71185}
+        - {x: 55.082718, y: 109.71185}
+        - {x: -89.91728, y: 115.71185}
+        - {x: -160.91728, y: 94.71185}
+        - {x: -176.91728, y: 48.711853}
+        - {x: -190.91728, y: -15.288147}
+        - {x: -193.91728, y: -30.288147}
+        - {x: -193.91728, y: -51.288147}
+        - {x: -188.91728, y: -59.288147}
+        - {x: -181.91728, y: -57.288147}
+        - {x: -185.91728, y: -58.288147}
+        - {x: -193.91728, y: -64.28815}
+        - {x: -193.91728, y: -79.28815}
+        - {x: -184.91728, y: -86.28815}
+        - {x: -182.91728, y: -86.28815}
+        - {x: -188.91728, y: -85.28815}
+        - {x: -192.91728, y: -88.28815}
+        - {x: -193.91728, y: -89.28815}
+        - {x: -193.91728, y: -98.28815}
+        - {x: -170.91728, y: -120.28815}
+        - {x: -133.91728, y: -125.28815}
+        - {x: -93.91728, y: -125.28815}
+        - {x: -44.917282, y: -115.28815}
+        - {x: -38.917282, y: -108.28815}
+        - {x: -10.917282, y: -113.28815}
+        - {x: -1.9172821, y: -113.28815}
+        - {x: 3.082718, y: -112.28815}
+        - {x: 6.082718, y: -109.28815}
+        - {x: 7.082718, y: -113.28815}
+        - {x: 15.082718, y: -114.28815}
+        - {x: 8.082718, y: -113.28815}
+        - {x: 6.082718, y: -112.28815}
+        - {x: -11.917282, y: -114.28815}
+        - {x: -37.917282, y: -113.28815}
+        - {x: -53.917282, y: -122.28815}
+        - {x: -42.917282, y: -125.28815}
+        - {x: 195.08272, y: -125.28815}
+        - {x: 195.08272, y: 21.711853}
+    - name: city2_6
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 1131
+        width: 542
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 75.969666, y: 66.22534}
+        - {x: -83.030334, y: 66.22534}
+        - {x: -87.030334, y: 64.22534}
+        - {x: -87.030334, y: -65.77466}
+        - {x: 76.969666, y: -65.77466}
+        - {x: 84.969666, y: -64.77466}
+        - {x: 87.969666, y: -6.774658}
+        - {x: 87.969666, y: 37.22534}
+        - {x: 84.969666, y: 58.22534}
+    - name: city2_7
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 1206
+        width: 109
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.487854, y: -48.18811}
+        - {x: 18.512146, y: -48.18811}
+        - {x: 18.512146, y: 34.81189}
+        - {x: 15.512146, y: 48.81189}
+        - {x: -14.487854, y: 48.81189}
+        - {x: -17.487854, y: 45.81189}
+    - name: city2_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 608
+        width: 380
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -60.946136, y: 62.76172}
+        - {x: -60.946136, y: -62.23828}
+        - {x: 54.053864, y: -62.23828}
+        - {x: 62.053864, y: -61.23828}
+        - {x: 62.053864, y: 62.76172}
+    - name: city2_9
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 437
+        width: 165
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.6501465, y: 87.34436}
+        - {x: 2.6501465, y: 92.34436}
+        - {x: -10.3498535, y: 92.34436}
+        - {x: -26.349854, y: 24.34436}
+        - {x: -26.349854, y: -72.65564}
+        - {x: -18.349854, y: -91.65564}
+        - {x: 12.6501465, y: -91.65564}
+        - {x: 21.650146, y: -89.65564}
+        - {x: 25.650146, y: -87.65564}
+        - {x: 27.650146, y: -59.65564}
+        - {x: 27.650146, y: 24.34436}
+    - name: city2_10
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 615
+        width: 433
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47.507446, y: 49.009796}
+        - {x: -69.50745, y: 16.009796}
+        - {x: -69.50745, y: -26.990204}
+        - {x: -65.50745, y: -47.990204}
+        - {x: 66.49255, y: -47.990204}
+        - {x: 70.49255, y: -22.990204}
+        - {x: 70.49255, y: 17.009796}
+        - {x: 47.492554, y: 49.009796}
+    - name: city2_11
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 739
+        width: 112
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.920746, y: 48.332916}
+        - {x: -17.920746, y: 25.332916}
+        - {x: -17.920746, y: -47.667084}
+        - {x: 19.079254, y: -47.667084}
+        - {x: 19.079254, y: 32.332916}
+        - {x: 15.079254, y: 48.332916}
+    - name: city2_12
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 235
+        width: 299
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.0755005, y: 120.47122}
+        - {x: 3.0755005, y: 121.47122}
+        - {x: -31.9245, y: 121.47122}
+        - {x: -47.9245, y: 33.471222}
+        - {x: -47.9245, y: -120.52878}
+        - {x: 49.0755, y: -120.52878}
+        - {x: 49.0755, y: -85.52878}
+        - {x: 39.0755, y: 61.471222}
+    - name: city2_13
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 64
+        width: 196
+        height: 488
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.388428, y: 79.55386}
+        - {x: -31.388428, y: -78.44614}
+        - {x: -12.388428, y: -78.44614}
+        - {x: 32.611572, y: -73.44614}
+        - {x: 32.611572, y: 79.55386}
+    - name: city2_14
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 123
+        width: 542
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80.05748, y: 66.50196}
+        - {x: -86.05748, y: 58.50196}
+        - {x: -87.05748, y: 51.50196}
+        - {x: -87.05748, y: -12.498039}
+        - {x: -82.05748, y: -65.49804}
+        - {x: 87.94252, y: -65.49804}
+        - {x: 87.94252, y: 66.50196}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

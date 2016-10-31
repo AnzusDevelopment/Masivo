@@ -17,6 +17,12 @@ TagManager:
   - Enemy
   - World
   - ButtonLevel
+  - ButtonSettings
+  - deleteGames
+  - soundUp
+  - soundDown
+  - musicUp
+  - musicDown
   layers:
   - Default
   - TransparentFX
@@ -31,8 +37,8 @@ TagManager:
   - City
   - World
   - ButtonLevel
-  - 
-  - 
+  - EnemyTrash
+  - ButtonSettings
   - 
   - 
   - 

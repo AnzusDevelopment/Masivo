@@ -32,6 +32,7 @@ public class HitEnemy : MonoBehaviour {
                         GameObject blast = enemy.GetComponent<DestroyEnemy>().blast;
                         Instantiate(blast, enemy.GetComponent<Transform>().position, Quaternion.identity);
                         bool duplicate = enemy.GetComponent<DestroyEnemy>().duplicate;
+                        bool leftTrash = enemy.GetComponent<DestroyEnemy>().leftTrash;
                         int destroyScore = enemy.GetComponent<DestroyEnemy>().score;
                         if (duplicate)
                         {
@@ -39,6 +40,12 @@ public class HitEnemy : MonoBehaviour {
                             Vector3 enemyPosition = enemy.GetComponent<Transform>().position;
                             StartCoroutine(createChildEnemy(enemyPosition, enemyChild));
                             instantiateEnemy.enemiesLeft += 2;
+                        }
+                        if (leftTrash)
+                        {
+                            GameObject enemyChild = enemy.GetComponent<DestroyEnemy>().enemyChild;
+                            Vector3 enemyPosition = enemy.GetComponent<Transform>().position;
+                            Instantiate(enemyChild, enemyPosition, Quaternion.identity);
                         }
                         ScoreController.Instance.setScore(ScoreController.Instance.getScore() + destroyScore);
                         Destroy(enemy);
@@ -52,7 +59,6 @@ public class HitEnemy : MonoBehaviour {
         {
             if (enemyCount > 2)
                 ScoreController.Instance.setScore(ScoreController.Instance.getScore() + 10 * (enemyCount - 1));
-                
             sametime = 0;
             enemyCount = 0;
         }

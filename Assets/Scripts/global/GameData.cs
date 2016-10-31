@@ -3,17 +3,18 @@ using System.Collections;
 
 public class GameData : MonoBehaviour {
 
-
-    public const int LEVELS_PER_WORLD = 9;
-    public const int BUTTONS_POS = 2;
+    public const int STARS_POS = 2;
+    public const int BUTTONS_POS = 1;
 
     public GameObject[] worlds;
     public GameObject panelLevels;
     public GameObject loadingWindow;
 
     public GameObject button;
-    public Sprite buttonPending;
-    public Sprite buttonOk;
+    public GameObject stars;
+    public Sprite[] buttonPending;
+    public Sprite[] buttonOk;
+    public Sprite buttonZeroStar;
     public Sprite buttonOneStar;
     public Sprite buttonTwoStars;
     public Sprite buttonThreeStars;
@@ -28,6 +29,7 @@ public class GameData : MonoBehaviour {
     void Awake () {
         panelLevels.SetActive(false);
         loadingWindow.SetActive(false);
+        stars = panelLevels.transform.GetChild(STARS_POS).gameObject;
         button = panelLevels.transform.GetChild(BUTTONS_POS).gameObject;
-	}
+    }
 }

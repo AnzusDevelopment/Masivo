@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: b469d40e6d41dcb44b263de8c0b23872
+timeCreated: 1474504581
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: city3_2_0
+    21300002: city3_2_1
+    21300004: city3_2_2
+    21300006: city3_2_3
+    21300008: city3_2_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: city3_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 494
+        height: 1685
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 160.5, y: 164.4372}
+        - {x: 158.5, y: 166.4372}
+        - {x: 127.5, y: 166.4372}
+        - {x: 127.5, y: 371.4372}
+        - {x: 125.5, y: 373.4372}
+        - {x: 87.5, y: 373.4372}
+        - {x: 87.5, y: 554.4372}
+        - {x: 68.5, y: 554.4372}
+        - {x: 68.5, y: 373.4372}
+        - {x: 32.5, y: 373.4372}
+        - {x: 32.5, y: 516.4372}
+        - {x: 30.5, y: 518.4372}
+        - {x: 15.5, y: 518.4372}
+        - {x: 13.5, y: 516.4372}
+        - {x: 13.5, y: 373.4372}
+        - {x: -18.5, y: 373.4372}
+        - {x: -20.5, y: 371.4372}
+        - {x: -20.5, y: 166.4372}
+        - {x: -76.5, y: 166.4372}
+        - {x: -78.5, y: 164.4372}
+        - {x: -78.5, y: -79.562805}
+        - {x: -162.5, y: -79.562805}
+        - {x: -162.5, y: -552.5628}
+        - {x: 161.5, y: -552.5628}
+        - {x: 162.5, y: -551.5628}
+        - {x: 162.5, y: -81.562805}
+        - {x: 160.5, y: -79.562805}
+    - name: city3_2_1
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 6
+        width: 495
+        height: 1213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -162.40564, y: 399.4372}
+        - {x: -162.40564, y: -396.5628}
+        - {x: -161.40564, y: -397.5628}
+        - {x: 162.59436, y: -397.5628}
+        - {x: 163.59436, y: -396.5628}
+        - {x: 163.59436, y: 399.4372}
+    - name: city3_2_2
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 2
+        width: 338
+        height: 1163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -111.03027, y: 382.3124}
+        - {x: -111.03027, y: -381.6876}
+        - {x: 111.96973, y: -381.6876}
+        - {x: 111.96973, y: 382.3124}
+    - name: city3_2_3
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 2
+        width: 495
+        height: 1358
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -162.45532, y: 446.3124}
+        - {x: -162.45532, y: -445.6876}
+        - {x: 163.54468, y: -445.6876}
+        - {x: 163.54468, y: 446.3124}
+    - name: city3_2_4
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 0
+        width: 581
+        height: 1107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 186.7478, y: 307.5}
+        - {x: 176.7478, y: 312.5}
+        - {x: 174.7478, y: 312.5}
+        - {x: 172.7478, y: 314.5}
+        - {x: 169.7478, y: 314.5}
+        - {x: 167.7478, y: 316.5}
+        - {x: 165.7478, y: 316.5}
+        - {x: 162.7478, y: 318.5}
+        - {x: 160.7478, y: 318.5}
+        - {x: 158.7478, y: 320.5}
+        - {x: 156.7478, y: 320.5}
+        - {x: 149.7478, y: 324.5}
+        - {x: 147.7478, y: 324.5}
+        - {x: 144.7478, y: 326.5}
+        - {x: 142.7478, y: 326.5}
+        - {x: 128.7478, y: 333.5}
+        - {x: 126.7478, y: 333.5}
+        - {x: 123.7478, y: 335.5}
+        - {x: 121.7478, y: 335.5}
+        - {x: 105.7478, y: 343.5}
+        - {x: 103.7478, y: 343.5}
+        - {x: 100.7478, y: 345.5}
+        - {x: 98.7478, y: 345.5}
+        - {x: 96.7478, y: 347.5}
+        - {x: 94.7478, y: 347.5}
+        - {x: 91.7478, y: 349.5}
+        - {x: 89.7478, y: 349.5}
+        - {x: 87.7478, y: 351.5}
+        - {x: 85.7478, y: 351.5}
+        - {x: 82.7478, y: 353.5}
+        - {x: 77.7478, y: 354.5}
+        - {x: 75.7478, y: 356.5}
+        - {x: 73.7478, y: 356.5}
+        - {x: 70.7478, y: 358.5}
+        - {x: 68.7478, y: 358.5}
+        - {x: 65.7478, y: 360.5}
+        - {x: 65.7478, y: 362.5}
+        - {x: 64.7478, y: 363.5}
+        - {x: -190.2522, y: 363.5}
+        - {x: -190.2522, y: -361.5}
+        - {x: -189.2522, y: -362.5}
+        - {x: 63.747803, y: -362.5}
+        - {x: 65.7478, y: -360.5}
+        - {x: 65.7478, y: -357.5}
+        - {x: 82.7478, y: -357.5}
+        - {x: 83.7478, y: -358.5}
+        - {x: 91.7478, y: -358.5}
+        - {x: 92.7478, y: -359.5}
+        - {x: 108.7478, y: -359.5}
+        - {x: 109.7478, y: -360.5}
+        - {x: 118.7478, y: -360.5}
+        - {x: 119.7478, y: -361.5}
+        - {x: 136.7478, y: -361.5}
+        - {x: 137.7478, y: -362.5}
+        - {x: 145.7478, y: -362.5}
+        - {x: 146.7478, y: -363.5}
+        - {x: 191.7478, y: -363.5}
+        - {x: 191.7478, y: 305.5}
+        - {x: 190.7478, y: 306.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

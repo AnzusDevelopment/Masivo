@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 using PlayFab;
 using PlayFab.ClientModels;
@@ -42,14 +41,14 @@ public class InstantiateEnemy : MonoBehaviour {
     private int actualWorld;
 
     void Start () {
-        actualLevel = PlayerPrefs.GetInt(PlayerPrefsName.PLAYER_ACTUAL_LEVEL);
-        actualWorld = PlayerPrefs.GetInt(PlayerPrefsName.PLAYER_ACTUAL_WORLD);
+        actualLevel = AdvanceController.instance.activeLevel;
+        actualWorld = AdvanceController.instance.activeWorld;
         gamePatterns = new GamePatterns(actualWorld, actualLevel);
         pattern = gamePatterns.getPattern();
         time = 0;
         speeds = new float[enemies.Length];
         for (var i = 0; i < enemies.Length; i++)
-            speeds[i] = (float)difficulty / 30;
+            speeds[i] = (float)difficulty / 19;
     }
 
     void Update()

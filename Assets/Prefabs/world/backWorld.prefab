@@ -13,6 +13,7 @@ GameObject:
   - 114: {fileID: 11458554}
   - 114: {fileID: 11485410}
   - 114: {fileID: 11476422}
+  - 114: {fileID: 11420718}
   m_Layer: 0
   m_Name: backWorld
   m_TagString: Untagged
@@ -33,6 +34,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11420718
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcdeb8b5aef267a4f80731fd922f4b19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  star: {fileID: 107856, guid: f2be803edece0e044a00017048218448, type: 2}
 --- !u!114 &11436830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49,6 +62,11 @@ MonoBehaviour:
   - {fileID: 112720, guid: 8cbb3e87116f39e40a21fd5551ed3b75, type: 2}
   - {fileID: 128628, guid: 76b7c2ed5e4dd664c8d7ddf8f7b4654e, type: 2}
   - {fileID: 193630, guid: 0799af16b64b5c14db94959ca5a8b4f9, type: 2}
+  - {fileID: 108550, guid: e7219716ce96bef4992201e424ca0bd5, type: 2}
+  - {fileID: 178276, guid: 728ec2b7bb14d644e82ee99e0bac9f9b, type: 2}
+  - {fileID: 172466, guid: df4f5c27548b7a84ea073dece4d003ec, type: 2}
+  - {fileID: 178106, guid: cbeb82eb1afc0bb49bb85e5b44f2e608, type: 2}
+  - {fileID: 157560, guid: 7672e4a415617c34d821bb25e125de6a, type: 2}
   loadingWindow: {fileID: 125524, guid: bf9b0325ed7f0bf41b8c8e13b5af07de, type: 2}
   playFabTitleId: 63E3
 --- !u!114 &11458554
@@ -88,10 +106,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 034aa9ba568b91843b585fdc90108c12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonOk: {fileID: 21300020, guid: 18cd96c1c92f6c541992077dfe49bb60, type: 3}
-  buttonOneStar: {fileID: 21300022, guid: 18cd96c1c92f6c541992077dfe49bb60, type: 3}
-  buttonTwoStars: {fileID: 21300024, guid: 18cd96c1c92f6c541992077dfe49bb60, type: 3}
-  buttonThreeStars: {fileID: 21300026, guid: 18cd96c1c92f6c541992077dfe49bb60, type: 3}
+  buttonOk: {fileID: 21300000, guid: 2a08500cac972db47a22cfd96735cd98, type: 3}
+  buttonOneStar: {fileID: 21300000, guid: 3b06c64aa4edcf540b5e26996724bca5, type: 3}
+  buttonTwoStars: {fileID: 21300000, guid: ede07394931755449b401c35f6a89fb7, type: 3}
+  buttonThreeStars: {fileID: 21300000, guid: ba1f9e6b8837ce64c9e4b58502235399, type: 3}
   panelNextLevel: {fileID: 0}
   panelPaused: {fileID: 0}
   panelFailed: {fileID: 0}
